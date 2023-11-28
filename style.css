@@ -1,0 +1,155 @@
+:root{
+    /* Primary color */
+    --primary: #a4916d;
+
+    /* Text colors */
+    --black: #000;
+    --white:#fff;
+    --light-black: #666;
+
+    /* Hover effect */
+    --hover: rgba(244, 244, 244, 0.8);
+
+    /* Background and border */
+    --bg: #f9f9f9;
+    --border: 0.1rem solid Orgba(0, 0, 0, 0.3);
+
+    /* Box shadow */
+    --box-shadow:0 0.5rem 1rem Orgba(0, 0, 0, 0.1);
+}
+
+/* Set font-family and outline for all elements */
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--primary);
+    border-radius: 5rem;
+}
+
+section{
+    padding: 5rem 7%;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .9rem 3rem;
+    border-radius: 10rem;
+    border: .1rem solid var(--primary);
+    font-size: 1.7rem;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: var(--primary);
+    color: var(--white);
+}
+
+/* Header */
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;    
+
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+}
+
+.header .logo i{
+    color: var(--primary);
+    padding-right: .5rem;
+
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: var(--black);
+    margin: 0 1rem;
+}
+
+.header .navbar a:hover{
+    color: var(--primary);
+}
+
+.header .icons div{
+    font-size: 2.5rem;
+    margin-left: 1.7rem;
+    color: var(--white);
+    cursor: pointer;
+    -webkit-text-stroke: .1rem var(--primary);
+}
+
+.header .icons div:hover{
+    color: var(--primary);
+}
+
+#menu-bar{
+    display: none;
+}
+
+/* End of Header */
+
+/* Home */
+.home{
+    min-height: 110vh;
+    display: flex;
+    background: url(/Assets/pexels-stefan-stefancik-919606.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+
+.home .content{
+    max-width: 60rem;
+    padding-top: 8rem;
+}
+
+.home .content h3{
+    font-size: 7rem;
+    color: var(--primary);
+    line-height: 1.2;
+}
+
+.home .content p{
+    font-size: 1.5rem;
+    padding: 1.3rem 0;
+    color: var(--white);
+    line-height: 2;
+}
+
